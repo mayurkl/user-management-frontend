@@ -1,0 +1,43 @@
+<div class="back-button-container">
+  <button mat-button class="back-button" (click)="goBack()">
+    <mat-icon>arrow_back</mat-icon> Back to List
+  </button>
+</div>
+<div class="user-details-container">
+  @if(userDetails){
+  <mat-card class="user-card" appearance="outlined">
+    <mat-card-header>
+      <div mat-card-avatar class="avatar">
+        <img
+          [src]="
+            'https://ui-avatars.com/api/?name=' +
+            userDetails.name +
+            '&background=random'
+          "
+          alt="User Avatar"
+          class="avatar-img"
+        />
+      </div>
+      <mat-card-title>{{ userDetails.name }}</mat-card-title>
+      <mat-card-subtitle>User ID: {{ userDetails.id }}</mat-card-subtitle>
+    </mat-card-header>
+
+    <mat-card-content>
+      <p>Bio:{{ userDetails.bio }}</p>
+      <p>
+        <mat-icon class="icon">language</mat-icon> Language:
+        {{ userDetails.language }}
+      </p>
+      <p>
+        <mat-icon class="icon">update</mat-icon> Version:
+        {{ userDetails.version }}
+      </p>
+    </mat-card-content>
+  </mat-card>
+
+  } @else {
+  <div class="no-user">
+    <p>No user found</p>
+  </div>
+  }
+</div>

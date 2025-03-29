@@ -1,0 +1,65 @@
+.user-details-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+
+  .user-card {
+    max-width: 400px;
+    margin: auto;
+    padding: calc(var(--base-unit) * 2);
+    border-radius: calc(var(--base-unit));
+    box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.1);
+    text-align: left;
+    background: var(--white);
+
+    mat-card-header {
+      display: flex;
+      gap: calc(var(--base-unit) * 2);
+
+      .avatar {
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        overflow: hidden;
+        background: #ddd;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+          border-radius: 50%;
+        }
+      }
+    }
+
+    mat-card-content {
+      p {
+        display: flex;
+        align-items: center;
+        gap: calc(var(--base-unit));
+      }
+    }
+  }
+
+  .no-user {
+    font-size: calc(var(--base-unit) * 5);
+    color: var(--grey-500);
+    font-weight: 500;
+  }
+}
+
+.back-button-container {
+  position: fixed;
+  top: calc(var(--base-unit) * 2);
+  left: calc(var(--base-unit) * 2);
+  z-index: 10;
+
+  .back-button {
+    color: var(--primary-color);
+  }
+}
