@@ -4,7 +4,7 @@ This project was generated using Angular CLI version 19.2.5.
 
 ---
 
-## 📌 Table of Contents
+## Table of Contents
 
 - [Project Overview](#project-overview)
 - [Features](#features)
@@ -17,14 +17,12 @@ This project was generated using Angular CLI version 19.2.5.
 
 ---
 
-## 📜 Project Overview
+## Project Overview
 The User Management Frontend is an Angular-based application that displays a list of users fetched from a JSON source. It includes a table view, a details view, and inline editing capabilities.
 
 ---
 
-## 🌟 Features
-
-## 🌟 Features
+## Features
 
 ✅ Dynamic Table View – Displays user data fetched from this [JSON source](https://microsoftedge.github.io/Demos/json-dummy-data/64KB.json)  
 ✅ Details View – Clicking a row opens a new page with details of the selected user  
@@ -34,11 +32,9 @@ The User Management Frontend is an Angular-based application that displays a lis
 ✅ Not Found Page – Handles invalid routes with a custom 404 error page  
 ✅ Back to List Button – Added on the Details Page and Not Found Page for easy navigation  
 
-
 ---
 
-
-## 🛠 Technologies Used
+## Technologies Used
 
 - **Frontend Framework:** Angular (Latest Version)
 - **CSS Library:** Angular Material
@@ -47,7 +43,7 @@ The User Management Frontend is an Angular-based application that displays a lis
 
 ---
 
-## ⚙️ Project Setup & Running
+## Project Setup & Running
 
 To run this project locally, follow these steps:
 
@@ -76,7 +72,7 @@ This will create a `dist/` folder containing the optimized production build.
 
 ---
 
-## 📁 Project Structure
+## Project Structure
 
 ```bash
 user-management-frontend/
@@ -107,7 +103,7 @@ user-management-frontend/
 
 ---
 
-## 🌍 Environment Configurations
+## Environment Configurations
 
 The project uses two environment configurations:
 
@@ -124,7 +120,7 @@ npm run start:prod
 
 ---
 
-## 🎨 Styling & Theming
+## Styling & Theming
 
 - **CSS Utility Library:** Angular Material
 - **Global Styles:**
@@ -133,7 +129,7 @@ npm run start:prod
 
 ---
 
-## 🧪 Code Quality & Linting
+## Code Quality & Linting
 
 The project follows strict coding standards with ESLint for Angular.
 
